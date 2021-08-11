@@ -1,0 +1,130 @@
+<div id="t">
+
+    <h1><b>3.2 Solución dual óptima a partir de la solución óptima del problema primal.</b></h1>
+
+    <h3>Ejemplo 1. Reddy Mikks: produce pinturas para interiores y exteriores con dos materias primas,  M<sub>1</sub> y M<sub>2</sub> . La siguiente tabla muestra los datos básicos del problema [4].</h3>
+
+    <br>
+            <center>
+                <figure>
+                    <img src="img/img34.jpg" alt="" width="100%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br> 
+            
+            <h3>Según una encuesta de mercado indica que la demanda diaria de pintura para interiores no puede exceder la pintura para exteriores en más de 1 tonelada. Asimismo, la demanda diaria máxima de pintura para interiores es de 2 toneladas.</h3>
+            <h3>Se desea obtener la combinación óptima de las dos pinturas para maximizar su utilidad diaria total.</h3>
+
+            <h3>Al plantear el modelo de programación lineal al problema se tiene:</h3>
+            
+            
+            
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img35.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br> 
+            
+            
+            <h3>Por lo tanto, la solución óptima es:</h3>
+            
+            <br>
+            <center>
+                <figure>
+                    <img src="img/imgg36.jpg" alt="" width="95%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br> 
+            
+            
+            <h3>Si se obtiene su problema dual se tiene:
+
+                <h3>Minimizar F =  24Y<sub>1</sub>+6Y<sub>2</sub>+ Y<sub>3</sub>+2y<sub>4</sub></h3>
+<h3>Sujeto a:</h3>
+<h3 class="cen">		 6Y<sub>1</sub>+Y<sub>2</sub>- Y<sub>3</sub>+ 0y<sub>4</sub>≥5 (toneladas de pintura para exteriores)</h3>
+<h3 class="cen">4Y<sub>1</sub>+2Y<sub>2</sub>+ Y<sub>3</sub>+ y<sub>4</sub>≥4 (toneladas de pintura para interiores)</h3>
+<h3 class="cen"> Y<sub>i</sub>≥0</h3>
+<h3>Donde:</h3>
+    
+<h3>Y<sub>1</sub> = Precio por unidad de materia prima M<sub>1</sub>.</h3>
+<h3>Y<sub>2</sub> = Precio por unidad de materia prima  M<sub>2</sub>.</h3>
+<h3>Y<sub>3</sub> = Precio por unidad de límite de mercado.</h3>
+<h3>y<sub>4</sub> = Precio por unidad de límite de demanda.</h3>
+
+
+
+
+<h3>La misma tabla óptima del primal provee los valores de las variables duales o precios sombra:</h3>
+
+            
+            
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img37.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br> 
+            
+            <h3>Por lo tanto, el resultado tanto de Max Z = 21     y      Min F = 21</h3>
+
+            <h3>Donde:</h3>
+            <h3>Y<sub>1</sub>= ¾ siendo lo más que se está dispuesto a pagar por una unidad adicional materia prima M<sub>1</sub> son $3/4.</h3>
+
+            <h3>Y<sub>2</sub> = ½ 	 siendo lo más que se está dispuesto a pagar por una unidad adicional materia prima M<sub>2</sub> son $1/2.</h3>
+
+            <h3>Y<sub>3</sub> = 0 	no se está dispuesto a pagar ninguna cantidad adicional por ser un recurso abundante.</h3>
+
+            <h3>Y<sub>3</sub> = 0 no se está dispuesto a pagar algo por una unidad adicional por ser un recurso abundante.</h3>
+
+            <h3>y<sub>4</sub> = 0 no se está dispuesto a pagar algo por una unidad adicional por ser un recurso abundante.</h3>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+    <br><br>
+
+    <div style=" width:auto; position:absolute; left: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t0">
+            <span class="glyphicon glyphicon-triangle-left"></span> Anterior
+        </a>
+    </div>
+
+    <div style=" width:auto; position:absolute; right: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t1">
+            <span class="glyphicon glyphicon-triangle-right"></span> Siguiente
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#t1").click(function (event) {
+            $("#temas").load("Tema3.3.html");
+        });
+        $("#t0").click(function (event) {
+            $("#temas").load("Tema3.1.2.html");
+        });
+
+    });
+
+</script>

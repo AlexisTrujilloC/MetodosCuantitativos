@@ -1,0 +1,57 @@
+<div id="t">
+
+    <h1><b> 4.2 El problema del árbol de extensión mínima</b></h1>
+    <h3>Este árbol vincula los nodos de una red valiéndose de la longitud mínima total de las ramas de conexión. Una aplicación común se presenta en la pavimentación de carreteras que unen poblaciones, o de forma directa, o que pasan por otras poblaciones.</h3>
+    <h3>Para resolver este problema se utiliza el algoritmo de KRUSKAL:</h3>
+
+    <h3>1.- Seleccionar cualquier nodo de la red.</h3>
+    <h3>2.- Conectar este nodo al nodo más cercano que minimice la distancia total.</h3>
+    <h3>3.- Considerando todos los nodos que ahora están conectados, encontrar y conectar el nodo más cercano que no esté conectado.  Si hay un empate para el nodo más cercano, seleccionar uno arbitrariamente. Un empate sugiere que puede haber más de una solución óptima.</h3>
+    <h3>4.- Repetir el tercer paso hasta que todos los nodos estén conectados.</h3>
+
+    <h3>n-1 = número de arcos.</h3>
+
+    <h3><b>Ejercicio:</b></h3>
+    <h3>Midwest TV Cable Company va a proporcionar servicio de cable a cinco desarrollos habitacionales. La figura ilustra las posibles conexiones de TV a las cinco áreas, con las millas de cable anexadas a cada arco. El objetivo es determinar la red de cables más económica [1].</h3>
+     <br>
+            <center>
+                <figure>
+                    <img src="img/img79.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>      
+            
+            <h3>            Respuesta: 16 millas</h3>
+
+            <h3><mark>https://www.youtube.com/watch?v=DuCvEUj2hzg</mark></h3>
+
+            <br><br>
+
+    <div style=" width:auto; position:absolute; left: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t0">
+            <span class="glyphicon glyphicon-triangle-left"></span> Anterior
+        </a>
+    </div>
+
+    <div style=" width:auto; position:absolute; right: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t1">
+            <span class="glyphicon glyphicon-triangle-right"></span> Siguiente
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#t1").click(function (event) {
+            $("#temas").load("Tema4.3.html");
+        });
+        $("#t0").click(function (event) {
+            $("#temas").load("Tema4.1.1.html");
+        });
+
+    });
+
+</script>

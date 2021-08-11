@@ -1,0 +1,9 @@
+¿Cuál de las siguientes funciones es lineal?;
+La región factible se define como:;
+La función objetivo es:;
+Formulación del problema se refiere a:;
+¿Qué es una función lineal?;
+Considere el siguiente problema de PL  y encuentre cuál es la solución óptima:<br> Max Z = 8X1 + 5X2<br> Sujeto a: 2X1 +  X2 <= 1,200 <br> 3X1 +4X2 <= 2,400 <br>X1 +  X2 <= 800 X1 –  X2 <= 450 <br>X1,    X2 >=   0;
+Una variable artificial es:;
+El desarrollador del método simplex fue:;
+¿Qué se entiende por condiciones técnicas?

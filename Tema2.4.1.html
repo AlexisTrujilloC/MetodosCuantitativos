@@ -1,0 +1,85 @@
+<div id="t">
+
+
+    <h1><b>2.4.1	Determinación de la región factible y la solución óptima.</b></h1>
+
+    <h3>Para resolver un modelo de optimización por el método gráfico, primero se hace la gráfica de la región que representan las restricciones, a la que se le llama región factible, posteriormente se hace la gráfica de la función objetivo y se comienza a desplazar por la región factible hasta obtener una solución óptima.</h3>
+
+    <h3><b>Ejemplo problema de maximizar: </b></h3>
+    <h3>Reddy Mikks produce pinturas para interiores y exteriores con dos materias primas M1 y M2. La tabla siguiente proporciona los datos básicos del problema.</h3>
+
+ <br>
+            <center>
+                <figure>
+                    <img src="img/img14.jpg" alt="" />
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br> 
+
+            
+            <h3>    Una encuesta de mercado indica que la demanda diaria de pintura para interiores no puede exceder la de pintura para exteriores en más de una tonelada. Asimismo, que la demanda diaria máxima de pintura para interiores es de dos toneladas.</h3>
+            <h3>Reddy Mikks se propone determinar la mejor combinación óptima de pinturas para interiores y exteriores que maximice la utilidad diaria total [18].</h3>
+
+            <h3><b>1.- Formulación del problema</b></h3>
+            <h3><b>Describir el objetivo </b>El objetivo de Reddy Mikks es maximizar la contribución total a la ganancia.</h3>
+            <h3><b>Describir cada restricción</b> Cuatro restricciones limitan la cantidad de toneladas diarias de pintura que pueden producirse.</h3>
+            <h3><b>Restricción 1:</b> La disponibilidad diaria máxima de materia prima M1 es de 24 toneladas.</h3>
+            <h3><b>Restricción 2: </b>La disponibilidad diaria máxima de materia prima M2 es de 6 toneladas.</h3>
+            <h3><b>Restricción 3: </b>La producción diaria de pintura para interiores no debe exceder a la de pintura para exteriores en más de una tonelada.</h3>
+            <h3><b>Restricción 4:</b> La demanda diaria de pintura para interiores es de 2 toneladas.</h3>
+            <h3><b>Las variables de decisión </b>son entradas controlables en el problema. Para el problema de Reddy Mikks las dos variables de decisión son:</h3>
+            <h3>	X1= toneladas producidas diariamente de pintura para exteriores.</h3>
+            <h3>X2= toneladas producidas diariamente de pintura para interiores.</h3>
+            <h3><b>Función objetivo:</b></h3>
+            <h3>Max Z = 5X1 + 4X2</h3>
+            <h3><b>2.- Construcción del modelo matemático:</b></h3>
+
+            <h3>Max Z =   5X1 + 4X2</h3>
+            <h3>Sujeto a </h3>
+            <h3>         6X1 + 4X2 ≤24   Materia prima M1</h3>
+            <h3> X1 + 2X2  ≤ 6   Materia prima M2</h3>
+            <h3>-X1 +   X2  ≤ 1  Producción de ambas pinturas</h3>
+            <h3>                       X2 ≤ 2  Demanda diaria de pintura para interiores</h3>
+            <h3>X1,     X2 ≥ 0</h3>
+
+            <h3><b>Obtención de la solución óptima:</b></h3>
+
+             <br>
+            <center>
+                <figure>
+                    <img src="img/img15.jpg" alt="" width="70%"/>
+                    <figcaption>Extraído de: https://www.youtube.com/watch?v=2kI3OaV9-_o</figcaption>
+                </figure>
+            </center>
+            <br> <br> 
+            
+            
+            
+    <div style=" width:auto; position:absolute; left: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t0">
+            <span class="glyphicon glyphicon-triangle-left"></span> Anterior
+        </a>
+    </div>
+
+    <div style=" width:auto; position:absolute; right: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t1">
+            <span class="glyphicon glyphicon-triangle-right"></span> Siguiente
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#t1").click(function (event) {
+            $("#temas").load("Tema2.5.html");
+        });
+        $("#t0").click(function (event) {
+            $("#temas").load("Tema2.4.html");
+        });
+
+    });
+
+</script>

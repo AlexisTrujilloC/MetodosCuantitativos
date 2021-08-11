@@ -1,0 +1,49 @@
+<div id="t">
+
+    <h1><b>    5.2.1 Suposiciones del modelo del lote económico.</b></h1>
+    <h3>El modelo EOQ es el más simple y sencillo de los modelos de inventario pues se basa en distintos supuestos:</h3>
+    <h3>1.	La demanda es conocida, constante e independiente</h3>
+    <h3>2.	El tiempo de entrega, es decir, el tiempo entre colocar y recibir la orden se conoce y es constante</h3>
+    <h3>3.	La recepción del inventario es instantánea y completa. En otras palabras, el inventario de una orden llega en un lote al mismo tiempo</h3>
+    <h3>4.	Los descuentos por cantidad no son posibles</h3>
+    <h3>5.	Los únicos costos variables son el costo de preparar o colocar una orden (costo de preparación) y el costo de mantener o almacenar unidades (costo de mantener)</h3>
+    <h3>6.	Los faltantes son inexistentes</h3>
+
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img100.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>
+            <h3>Con estos supuestos, la gráfica de del inventario a través del tiempo tiene forma de diente de sierra como se muestra en la figura 1. En la figura, Q* representa la cantidad que se ordena. Si se tratara de 500 unidades de tela, las 500 unidades llegan al mismo tiempo haciendo que el inventario aumente de 0 a 500 unidades. Como la demanda es constante, inventario disminuye de forma constante. Cada vez que se llega a 0 en el inventario se pone una orden y el inventario se eleva a Q unidades.</h3>
+            <br><br>
+
+    <div style=" width:auto; position:absolute; left: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t0">
+            <span class="glyphicon glyphicon-triangle-left"></span> Anterior
+        </a>
+    </div>
+
+    <div style=" width:auto; position:absolute; right: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t1">
+            <span class="glyphicon glyphicon-triangle-right"></span> Siguiente
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#t1").click(function (event) {
+            $("#temas").load("Tema5.2.2.html");
+        });
+        $("#t0").click(function (event) {
+            $("#temas").load("Tema5.2.html");
+        });
+
+    });
+
+</script>

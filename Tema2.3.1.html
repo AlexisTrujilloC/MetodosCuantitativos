@@ -1,0 +1,273 @@
+<div id="t">
+
+    <h1><b>2.3.1	Formulación del modelo matemático: determinación del objetivo, variables, restricciones y la función objetivo.</b></h1>
+
+    <h3>La formulación de un modelo de PL implica desarrollar un modelo matemático para representar al problema administrativo. En consecuencia, para formular un problema, es necesario entender a cabalidad el problema administrativo que se enfrenta. Una vez que éste se entiende,  se puede comenzar a desarrollar el enunciado matemático del mismo [10].</h3>
+    <h3>La construcción del modelo matemático comenzará por definir las variables de decisión, que representan las variables  sobre las que el decisor tiene control y que se suponen continuas. Se representarán algebraicamente  en la forma X1, X2,… o bien con nombres específicos que faciliten su identificación. Representarán productos o bienes a producir, almacenar o vender, disponibilidad o adquisición de materias primas,…Puede haber problemas en los que resulta imposible la definición de alternativas de variables y una elección cuidadosa será determinante para la posterior resolución del modelo construido, que consistirá en la asignación a éstas de unos determinados valores numéricos.</h3>
+    <h3>El siguiente paso será el reconocimiento de las restricciones y su construcción. Las restricciones representan limitaciones o requisitos y definirán las decisiones admisibles, es decir, la región factible del problema. Podrán ser de la forma de desigualdades y/o igualdades, según representen el deseo de no exceder  cierto valor específico (<=), no descender por debajo de tal valor (>=) o ser igual a él (=). </h3>
+    <h3>Finalmente, se construirá la función objetivo, que representará alguna cantidad que desea maximizar el decisor (beneficio, renta, eficacia, producción,…) o bien minimizar (costo, tiempo, inventario,…). </h3>
+
+    <h3><b>Formulación del problema:</b></h3>
+    <h3>Es el proceso de traducir la declaración verbal del mismo en una declaración matemática. La declaración matemática del problema se denomina modelo matemático. Para tal efecto, se propone: definir las variables de decisión, el objetivo del problema, las restricciones estructurales y establecer las condiciones técnicas. Para una mejor compresión de la formulación del problema, se comentará cada uno de los elementos citados arriba [11].</h3>
+    <h3><b>Función objetivo:</b><h3>
+            <h3>En cualquier problema de programación lineal, el que toma las decisiones desea maximizar (por lo regular, los ingresos o las utilidades) o reducir al mínimo (casi siempre, los costos) algunas funciones de las variables de decisión. La función que se desea maximizar o minimizar recibe el nombre de función objetivo [12].</h3>
+
+
+            <h3><b>Por ejemplo:    </b></h3>
+            <h3>Z=3x_1  + 2x_2  +...+ 5x_n.          Esta función se llama función objetivo. </h3>
+
+            <h3><b>Alternativas:</b></h3>
+            <h3>Deben existir cursos de acción alternativos entre los cuales se pueda elegir. Por ejemplo, si una compañía fabrica tres productos diferentes, la administración  puede utilizar la programación lineal para decidir cómo asignar entre ellos sus limitados recursos de producción (de personal, maquinaria y así sucesivamente). ¿Deberá dedicar toda la capacidad de manufactura a fabricar sólo el primer producto, deberá producir cantidades iguales de cada uno de ellos o deberá asignar los recursos en alguna otra proporción? [13].</h3>
+            <h3><b>Restricciones estructurales:</b></h3>
+            <h3>Representan los diferentes requisitos que debe cumplir cualquier solución para que pueda llevarse a cabo. En cierta manera, son las limitaciones en los valores de los niveles de las diferentes actividades (variables). </h3>
+
+            <h3><b>Condiciones técnicas:</b></h3>
+            <h3>Este apartado establece que todas las variables deben tomar valores no negativos. Lo anterior obedece a diversas razones técnicas. Además en la mayoría de las formulaciones reales de PL, las variables resultan ser no negativas [14].</h3>
+
+            <h3><b>Variables de decisión:</b></h3>
+            <h3>En cualquier modelo de PL, las variables de decisión deben describir por completo las decisiones que se tienen que tomar  [15].</h3>
+            <br>
+            <h3><b>PROBLEMAS:</b></h3>
+            <h3><b>Ejemplo 1.</b></h3>
+            <h3>Una planta que fabrica  productos metálicos especializados ha descontinuado recientemente las ventas de una línea de productos no rentables. Esto produjo un exceso de capacitación de producción que se puede usar para fabricar mayor cantidad de las demás líneas. La gerencia de la empresa ha identificado tres productos existentes rentables y desea saber cómo se debe asignar la nueva capacidad entre estos tres, para incrementar sus utilidades tanto como sea posible.</h3>
+            <h3>Todas las hojas de ruta de producción para estos tres productos especifican procesamiento en máquinas fresadoras de control numérico, un torno y una esmeriladora. El tiempo disponible ahora para estas máquinas es el siguiente:</h3>
+
+
+            <center>
+                <table class="table table-bordered" id="tabla" style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Tiempo disponible
+                                (Horas de máquina por semana)
+                            </th>
+
+
+                        </tr>
+                    </thead> 
+                    <tbody>
+                        <tr>
+                            <td>Máquina con CN
+                            </td>
+                            <td>520 horas 
+                            </td>
+
+
+
+                        </tr>
+                        <tr>
+                            <td >Torno      
+                            </td>
+                            <td>210 horas
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>Esmeriladora    </td>
+                            <td>125 horas
+                            </td>
+
+
+                        </tr>
+
+                    </tbody>
+                </table><br>
+            </center>    
+
+            <h3>Las hojas de ruta también proporcionan la siguiente información de tiempo estándar (en horas de máquina por unidad)</h3>
+            <br>
+
+
+
+
+
+
+            <center>
+                <table class="table table-bordered" id="tabla" style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th>Máquina</th>
+                            <th>Producto 1
+                            </th>
+                            <th>Producto 2</th>
+                            <th>Producto 3
+                            </th>
+
+
+                        </tr>
+                    </thead> 
+                    <tbody>
+                        <tr>
+                            <td>Máquina con CN
+                            </td>
+                            <td>16
+                            </td>
+                            <td>5
+                            </td>
+                            <td>8
+                            </td>
+
+
+                        </tr>
+                        <tr>
+                            <td >Torno      
+                            </td>
+                            <td>10
+                            </td>
+                            <td>5
+                            </td>
+                            <td>1
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>Esmeriladora    </td>
+                            <td>2
+                            </td>
+                            <td>1
+                            </td>
+                            <td>1
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+                </table><br>
+            </center>    
+
+
+
+
+
+
+
+            <h3>El departamento de ventas de la empresa pronostica que las ventas potenciales para los productos 1 y 2 exceden la tasa de producción máxima, pero que el potencial para el producto 3 está limitado  a 50 unidades por semana. Al mismo tiempo, el departamento de ingeniería industrial ha pronosticado que, al volumen que quizá se llegará y los niveles de productividad estimados por la gerencia, la utilidad unitaria para los productos sería $45, $20 y $25, respectivamente [16].</h3>
+
+
+            <h3><b>1.- FORMULACIÓN DEL PROBLEMA:</b></h3>
+
+            <h3>a) PROBLEMA: Desconocer la cantidad de del producto 1, 2 y 3 que deben producirse cada semana.</h3>
+
+            <h3>b) OBJETIVO: Maximizar la ganancia o utilidad que la empresa obtenga por la producción.</h3>
+
+            <h3>c) ALTERNATIVAS:   	</h3>
+            <h3>			- Producir únicamente el producto 1.</h3>
+            <h3>			- Producir únicamente el producto 2.</h3>
+            <h3>                              - Producir únicamente el producto 3.</h3>
+            <h3>		- Producir una mezcla de los tres productos.</h3>
+
+            <h3>d) RESTRICCIONES:</h3>
+
+            <h3>-	Disponibilidad máxima de 520 horas de la máquina CN.</h3>
+            <h3>-	Disponibilidad máxima de 210 horas del torno.</h3>
+            <h3>-	Disponibilidad máxima de 125 horas de la esmeriladora.</h3>
+            <h3>-	Se venden cuando mucho 50 unidades por semana del producto 3.</h3>
+
+
+            <h3><b>VARIABLES DE DECISIÓN:</b></h3>
+            <h3>X1 = Número de unidades a producir del producto 1.</h3>
+            <h3>X2 = Número de unidades a producir del producto 2.</h3>
+            <h3>X3 = Número de unidades a producir del producto 3.</h3>
+
+
+            <h3><b>2.- CONSTRUCCIÓN DE UN MODELO MATEMÁTICO PARA REPRESENTAR EL SISTEMA BAJO ESTUDIO:</b></h3>
+
+
+            <h3>Max Z = 45X1 + 20X2 + 25X3</h3>
+
+            <h3>s.a </h3>
+            <h3>16X1  +  5X2  +8X3 <=  520 horas máquina CN</h3>
+            <h3>10X1  +  5X2  +  X3 <=  210 horas torno</h3>
+            <h3>2X1 +     X2  +  X3 <=  125 horas esmeriladora</h3>
+            <h3>                         X3 <=  125 ventas del producto 3</h3>
+            <h3>X1,       X2,      X3 >=     0</h3>
+
+
+            <h3><b>Ejemplo 2.</b></h3>
+
+            <h3>La compañía Par es un pequeño fabricante de equipo y suministros para golf. El distribuidor de Par cree que existe un mercado tanto para una bolsa de golf de precio moderado, denominada modelo estándar, como para una bolsa de golf de precio elevado, denominada modelo de lujo. El distribuidor está tan confiado en el mercado que, si Par puede hacer bolsas a un precio competitivo, el distribuidor comprará todas las bolsas que Par pueda fabricar durante los siguientes tres meses. Un análisis cuidadoso de los requerimientos de manufactura dio como resultado la siguiente tabla, que muestra los requerimientos de tiempo de producción para las cuatro operaciones de manufactura requeridas y la estimación hecha por el departamento de contabilidad de la contribución a la ganancia por bolsa.</h3>
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img13.jpg" alt="" />
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>  
+
+            <h3>            El director de manufactura estima que dispondrán de 630 horas de tiempo de corte y teñido, 600 horas de tiempo de costura, 708 horas de tiempo de terminado y 135 horas de tiempo de inspección y empaque para la producción de bolsas de golf durante los siguientes tres meses.</h3>
+
+            <h3><ol type="a">    
+                    <li>Si la compañía desea maximizar la contribución  a la ganancia total, ¿cuántas bolsas de cada modelo debería fabricar?</li>
+                    <li>¿Qué contribución a la ganancia puede obtener Par con estas cantidades de producción?</li>
+                    <li>¿Cuántas horas de tiempo de producción se programarán para cada operación?</li>
+                    <li>¿Cuál es el tiempo de holgura en cada operación? [17].</li>
+                </ol></h3>
+            <h3><b>1.- FORMULACIÓN DEL PROBLEMA:	</b></h3>
+
+            <h3>a) PROBLEMA: Desconocer la cantidad que debe producirse de cada modelo de bolsa (estándar y de lujo).</h3>
+
+            <h3>b) OBJETIVO: Maximizar la ganancia o utilidad que la empresa obtenga por la producción de bolsas estándar y de lujo.</h3>
+
+            <h3>c) ALTERNATIVAS:   	</h3>
+            <h3>- Producir sólo bolsas estándar.</h3>
+            <h3>- Producir sólo bolsas de lujo.</h3>
+            <h3>- Producir ambos modelos.</h3>
+
+            <h3>d) RESTRICCIONES:</h3>
+            <h3>-	Se dispondrán  de 630 horas de tiempo de corte y teñido.</h3>
+            <h3>-	Se dispondrán de 600 horas de tiempo de costura.</h3>
+            <h3>-	Se dispondrán de 708 horas de tiempo de terminado.</h3>
+            <h3>-	Se dispondrán de 135 horas de tiempo de inspección y empaque.</h3>
+
+
+            <h3>e) VARIABLES DE DECISIÓN:	</h3>
+
+            <h3>X1 = Número de unidades a producir de bolsas estándar.</h3>
+            <h3>X2 = Número de unidades a producir de bolsas de lujo.</h3>
+
+
+            <h3><b>2.- CONSTRUCCIÓN DE UN MODELO MATEMÁTICO PARA REPRESENTAR EL SISTEMA BAJO ESTUDIO:</b></h3>
+
+            <h3>Max Z = 10X1 + 9X2</h3>
+
+            <h3>s.a </h3>
+            <h3>7/10X1 +    1 X2     <=   630 horas de corte y teñido.</h3>
+            <h3> ½ X1 + 5/6 X2     <=   600 horas de costura.</h3>
+            <h3>1X1 + 2/3X2      <= 708 horas de terminado</h3>
+            <h3>1/10X1  + ¼  X2     <= 135 horas de inspección y empaque.</h3>
+            <h3>	         X1,         X2     >=    0</h3>
+
+
+
+
+            <br><br>
+
+
+            <div style=" width:auto; position:absolute; left: 0%;">
+                <a href=# class="btn btn-info btn-lg"  id="t0">
+                    <span class="glyphicon glyphicon-triangle-left"></span> Anterior
+                </a>
+            </div>
+
+            <div style=" width:auto; position:absolute; right: 0%;">
+                <a href=# class="btn btn-info btn-lg"  id="t1">
+                    <span class="glyphicon glyphicon-triangle-right"></span> Siguiente
+                </a>
+            </div>
+            <br>
+            <br>
+            <br>
+            </div>
+            <script>
+                $(document).ready(function () {
+                    $("#t1").click(function (event) {
+                        $("#temas").load("Tema2.4.html");
+                    });
+                    $("#t0").click(function (event) {
+                        $("#temas").load("Tema2.3.html");
+                    });
+
+                });
+
+            </script>

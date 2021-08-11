@@ -1,0 +1,58 @@
+<div id="t">
+
+    <h1><b>2.1.2	El problema de programación lineal como un problema de optimización y sus características.</b></h1>
+
+    <h3>Todos los problemas de PL comparten cuatro propiedades:</h3>
+<h3>1.- Todos los problemas buscan maximizar o minimizar alguna cantidad, por lo general la utilidad o el costo.</h3>
+<h3>2.- Tienen limitaciones o restricciones que acotan el grado al cual se puede alcanzar un objetivo.</h3>
+<h3>3.- Deben existir cursos de acción alternativos entre los cuales se pueda elegir.</h3>
+<h3>4.- Los objetivos y restricciones en los problemas de PL se deben expresar en términos de ecuaciones o desigualdades lineales.</h3>
+
+<h3><b>Suposiciones de proporcionalidad y de aditividad:</b></h3>
+<h3>Técnicamente, existen cinco requerimientos de un problema de PL, los cuales hay que tomar en consideración:</h3>
+<h3><b>1.- Proporcionalidad</b></h3>
+<h3>Se supone que existe proporcionalidad entre el objetivo y las restricciones. Esto significa que si la producción de 1 unidad de un producto utiliza 3 horas de un recurso particular escaso, entonces producir 10 unidades de ese producto utiliza 30 horas del recurso [2].</h3>
+<h3><b>2.- Aditividad</b></h3>
+<h3>Significa que el valor de la función objetivo y los recursos totales usados pueden encontrarse sumando la contribución de la función objetivo y los recursos empleados para todas las variables de decisión [3].</h3>
+
+<h3><b>3.- Divisibilidad.</b></h3>
+<h3>Requiere que todas las variables de decisión puedan asumir valores fraccionarios. Un problema de PL en el cual alguna de las variables, o todas, debe ser un número entero no negativo, recibe el nombre de problema de programación entera. En muchas situaciones donde la divisibilidad no está presente, el redondeo de las variables a un entero, en la solución óptima, proporciona una solución razonable [4].</h3>
+
+<h3><b>4.- Certidumbre.</b></h3>
+        <h3>Para esta suposición, se requiere conocer con certeza todos los parámetros (coeficiente de la función objetivo, segundo miembro y coeficientes tecnológicos). Si hay incertidumbre en la cantidad exacta de horas-hombre y de las unidades de materia prima necesarias para manufacturar un escritorio, se incurriría en una violación a la suposición de certidumbre [5].</h3>
+        <h3><b>5.- No negatividad</b></h3>
+
+        <h3>Se supone que todas las respuestas o variables son no negativas. Los valores negativos de cantidades físicas son imposibles, simplemente no se puede producir un número negativo de sillas, camisas, lámparas o computadoras [6].</h3>
+
+
+
+        <br><br>
+        
+        
+    <div style=" width:auto; position:absolute; left: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t0">
+            <span class="glyphicon glyphicon-triangle-left"></span> Anterior
+        </a>
+    </div>
+
+    <div style=" width:auto; position:absolute; right: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t1">
+            <span class="glyphicon glyphicon-triangle-right"></span> Siguiente
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#t1").click(function (event) {
+            $("#temas").load("Tema2.2.html");
+        });
+        $("#t0").click(function (event) {
+            $("#temas").load("Tema2.1.1.html");
+        });
+
+    });
+
+</script>

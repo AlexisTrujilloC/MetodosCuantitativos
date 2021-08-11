@@ -1,0 +1,48 @@
+<div id="t">
+
+    <h1><b>2.5	El método simplex algebraico.</b></h1>
+
+    <h3>Hoy por hoy, el método simplex es sin duda alguna el método más utilizado y eficiente  en la solución de problemas de PL.</h3>
+
+    <h3>El método simplex es un método de naturaleza matricial, fue creado como un esquema iterativo que obtiene y evalúa ingeniosamente las Soluciones Básicas Factibles (SBF) del problema de PL hasta encontrar la solución óptima.</h3>
+
+    <h3>El método simplex lleva a cabo la búsqueda de la solución óptima en tres pasos:</h3>
+
+    <h3>1.- Obtiene una SBF de inicio denominada solución  básica factible inicial (SBFI)</h3>
+    <h3>2.- Mediante un criterio de mejoramiento decide si la SBF actual es susceptible de mejoría.</h3>
+    <h3>Si la SBF es inmejorable, entonces concluye que ésta es la óptima.</h3>
+    <h3>Si la SBF es mejorable, entonces prescribe cómo hacerlo y va al siguiente paso.</h3>
+
+    <h3>3.- Utilizando un criterio de factibilidad y considerando lo prescrito en 2b, diseña una SBF que necesariamente será factible.</h3>
+    <h3>Si no logra diseñar una SBF, entonces concluye que el problema tiene solución ilimitada.</h3>
+    <h3>De lo contrario vuelve al paso 2 [19].</h3>
+
+    <br><br>
+
+    <div style=" width:auto; position:absolute; left: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t0">
+            <span class="glyphicon glyphicon-triangle-left"></span> Anterior
+        </a>
+    </div>
+
+    <div style=" width:auto; position:absolute; right: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t1">
+            <span class="glyphicon glyphicon-triangle-right"></span> Siguiente
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#t1").click(function (event) {
+            $("#temas").load("Tema2.5.1.html");
+        });
+        $("#t0").click(function (event) {
+            $("#temas").load("Tema2.4.1.html");
+        });
+
+    });
+
+</script>

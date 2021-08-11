@@ -1,0 +1,111 @@
+<div id="t">
+    <h1><b>5.2.2 Punto de reorden.</b></h1>
+    <h3>El objetivo del EOQ es minimizar los costos totales. Con los supuestos que el modelo toma los costos significativos son el de preparar u ordenar y el de mantener. Todos los demás costos en si son constantes, de modo que si minimizamos los costos de ordenar y mantener tendremos un costo total mínimo.</h3>
+
+    <br>
+            <center>
+                <figure>
+                    <img src="img/img101.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>
+    
+            
+            
+            <h3>Como se puede observar en la figura 2, una reducción en los costos reducirá la curva de costo total y la curva de costo, también reduce la cantidad óptima a ordenar, teniendo un lote pequeño, el cual tendrá un impacto positivo en la calidad y flexibilidad de producción. </h3>
+            <h3>Otro detalle que podemos observar en la figura 2, es que la cantidad óptima a ordenar aparece en el punto en el que las curvas de costo de ordenar y el de mantener se cruzan. Esto no es una casualidad, debido a que con el modelo EOQ, la cantidad óptima aparecerá donde ambos costos son iguales. Con este hecho desarrollaremos las ecuaciones que nos darán el valor de Q*.</h3>
+            <h3>Los pasos son:</h3>
+            <h3><ol type="1">
+                    <li>Desarrollar una expresión para el costo de ordenar o preparar</li>
+                    <li>Desarrollar una expresión para el costo de mantener</li>
+                    <li>Establecer el costo de preparación igual al de mantener</li>
+                    <li>Resolver la ecuación para la cantidad optima</li>
+                </ol></h3>
+            <h3>Con las siguientes variables podremos construir la ecuación que nos llevara a Q*:</h3>
+            <h3>Q = Número de unidades por orden</h3>
+            <h3>Q* = Número óptimo de unidades a ordenar</h3>
+            <h3>D = Demanda anual en unidades para el artículo en el inventario</h3>
+            <h3>S = Costo de ordenar o preparar de cada orden</h3>
+            <h3>H = Costo de mantener o llevar inventario por unidad por año</h3>
+
+            <h3> Pasos por seguir:</h3>
+            <h3>1. Costo anual de preparación = (Número de ordenes colocadas por año) x (Costo de preparación u orden por ordenar)</h3>
+
+            <h3>=((Demanda anual)/(Número de unidades en cada orden))(Costo de preparación por ordenar)</h3>
+
+            <h3>=(D/Q)(S)=D/Q S</h3>
+ 
+            <h3>2. Costo anual de mantener = (Nivel de inventario promedio) x (costo de mantener por unidad por año)</h3>
+
+            <h3>=((Cantidad a ordenar)/2)(Costo de mantener por unidad por año)</h3>
+            <h3>=(Q/2)(H)=Q/2 H</h3>
+
+            <h3>3. Cantidad óptima por ordenar se encuentra cuando el costo anual de preparación es igual al costo anual de mantener:</h3>
+
+            <h3>   D/Q S=Q/2 H</h3>
+
+            <h3>Para despejar Q*, simplemente se multiplican de forma cruzada los términos y se despeja Q:</h3>
+            <h3>2DS=Q<sup>2</sup> H</h3>
+
+            <h3>Q<sup>2</sup>=2DS/H</h3>
+
+            <h3>Q<sup>*</sup>=√(2DS/H)</h3>
+
+            <h3><b>Ejemplos</b></h3>
+            <h3>Ejemplo 1</h3>
+            <h3>A Sharp Inc. Una compañía que comercializa agujas hipodérmicas indoloras para los hospitales, le gustaría reducir su costo de inventario al determinar el número óptimo de agujas que debe solicitar por orden. Su demanda anual es de 1000 unidades; el costo de preparar u ordenar es de $10 por orden, el costo de mantener por unidad es de $0.50.</h3>
+            <h3>Solución:</h3>
+            <h3>Usando estas cifras, podemos calcular el número óptimo de unidades por orden:</h3>
+            <h3>Q<sup>*</sup>=√(2DS/H)  </h3>
+            <h3>Q<sup>*</sup>=√(2(1000)(10)/0.50)=√40000=200 unidades</h3>
+            <h3>Interpretación. Sharp Inc. Debe pedir 200 unidades por orden.</h3>
+
+            <h3>Ejemplo 2</h3>
+            <h3>Sharp Inc. Tiene un año de 250 días hábiles y desea encontrar el número de órdenes (N) y el tiempo esperado entre ordenes (T) para este periodo. </h3>
+            <h3>Solución.</h3>
+            <h3>N=Demanda/(Cantidad a ordenar)=1000/200=5 órdenes por año</h3>  
+            <h3>T=(Número de días de trabajo por año)/N=250/5=50 días entre ordenes</h3>
+            <h3>Interpretación. La compañía ordenara cada 50 días agujas dando un total de 5 órdenes al año.</h3>
+
+            <h3>Ejemplo 3</h3>
+            <h3>Sharp Inc. Quere determinar el costo anual total.</h3>
+            <h3>Solución. Aplicando la ecuación</h3>
+            <h3>TC=(D/Q<sup>*</sup>)  S+(Q<sup>*</sup>/2 )H=(1000/200) (10)+(200/2) (0.50)=(5)(10)+(100)(0.50)=50+50=100</h3>
+            <h3>Interpretación. Observamos que ambos costos al final son iguales. Los $100 del total no incluyen costo real de bienes.</h3>
+
+
+            
+            
+            
+            
+            
+    <br><br>
+
+    <div style=" width:auto; position:absolute; left: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t0">
+            <span class="glyphicon glyphicon-triangle-left"></span> Anterior
+        </a>
+    </div>
+
+    <div style=" width:auto; position:absolute; right: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t1">
+            <span class="glyphicon glyphicon-triangle-right"></span> Siguiente
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#t1").click(function (event) {
+            $("#temas").load("Tema5.3.html");
+        });
+        $("#t0").click(function (event) {
+            $("#temas").load("Tema5.2.1.html");
+        });
+
+    });
+
+</script>

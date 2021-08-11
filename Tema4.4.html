@@ -1,0 +1,132 @@
+<div id="t">
+
+    <h1><b>    4.4 Planeación y control de proyectos: Método de la Ruta Crítica (CPM) y Técnica de Evaluación y Revisión de Programas (PERT).     </b></h1>
+
+
+    <h3>CPM Y PERT pueden usarse para planear, programar y controlar una amplia variedad de proyectos:</h3>
+    <h3><ol type="1">
+        <li>Investigación y desarrollo de nuevos productos y procesos.</li>
+        <li>Construcción de plantas, edificios y autopistas.</li>
+        <li>Mantenimiento de equipo grande y complejo.</li>
+        <li>Diseño e instalación de sistemas nuevos.</li>
+        </ol></h3>
+    <h3>En estos proyectos, los responsables o encargados deben programar y coordinar los diversos trabajos o actividades de modo que todo el proyecto se complete a tiempo. Debido a que los proyectos pueden tener muchas actividades, los gerentes de proyecto buscan procedimientos que les ayuden a responder cuestiones como las siguientes:</h3>
+    <h3>
+        <ol type="1">
+            <li>¿Cuál es el tiempo total que requerirá el proyecto?</li>
+            <li>¿Cuáles son las fechas programadas de inicio y finalización de cada actividad específica?</li>
+            <li>¿Cuáles actividades son críticas y deben completarse exactamente como se programó para mantener el proyecto conforme al programa?</li>
+            <li>¿Cuánto pueden demorarse las actividades no críticas antes de que causen un aumento en la duración del proyecto total?</li>
+        </ol>
+    </h3>
+    <h3>PERT y CPM pueden ayudar a responder estas interrogantes [3]…</h3>
+
+    <h3>Para realizar los cálculos necesarios, definimos un <b>evento</b> como un punto en el tiempo en el cual se terminan ciertas actividades y se inician otras. En términos de la red, el evento corresponde a un nodo. Después, introducimos las siguientes definiciones:</h3>
+
+    <h3 class="cen">□<sub>j</sub>=TIP (Tiempo de Inicio Más Próximo)</h3>
+    <h3 class="cen">Δ<sub>j</sub>=TTT (Tiempo de Terminación más Tardio)</h3>
+    <h3 class="cen">D<sub>ij</sub>=Duración de la actividad (i,j)</h3>
+
+    <h3>Las definiciones de las primeras y las últimas ocurrencias del evento j se especifican en relación con las fechas de inicio y terminación de todo el proyecto</h3>
+    <h3>Los cálculos de la ruta crítica implican dos pasos: el paso hacia adelante determina los primeros tiempos de ocurrencia de los eventos y el paso hacia atrás calcula sus últimas fechas de ocurrencia.</h3>
+    <h3><b>Paso hacia adelante (primeras fechas de ocurrencia, TIP).</b> En este paso, los cálculos empiezan en el nodo 1 y avanzan recursivamente hacia el nodo final n.</h3>
+    <h3><b>Paso inicial.</b> Determine TIP<sub>1</sub>≡0 para indicar que el proyecto empieza en la fecha 0.</h3>
+    <h3><b>Paso general j.</b> Dado que los nodos p, q,…, y v están unidos directamente con el nodo j por las actividades de entrada (p,j), (q,j), …, y v ya se han calculado, entonces la primera fecha de ocurrencia del evento j se calcula como:</h3>
+
+    <h3>TIP<sub>j</sub>=max{TIP<sub>p</sub>+D<sub>pj</sub>,TIP<sub>q</sub>+D<sub>qj</sub>,…TIP<sub>v</sub>+D<sub>vj</sub>}</h3>
+
+    <h3>El paso adelante está completo cuando se calcula TIP<sub>nen</sub> el nodo n. Por definición, TIP<sub>j</sub> representa la ruta (duración) más larga al nodo j.</h3>
+
+    <h3><b>Paso hacia atrás (últimas fechas de ocurrencia, TTT)</b>. Después de la terminación del paso hacia adelante, los cálculos del paso hacia atrás empiezan en el nodo n y regresan recursivamente al nodo 1.</h3>
+
+    <h3><b>Paso inicial.</b> Determinar TTT<sub>n</sub>≡TIP<sub>n</sub> para indicar que la primera y la última ocurrencia del último acontecimiento del proyecto son las mismas.</h3>
+
+    <h3><b>Paso general j.</b> Dado que los nodos p, q,…, y v están unidos directamente al nodo j por las actividades de salida (j,p), (j,q), …, y (j,v) y que las últimas fechas de ocurrencia de los eventos (nodos) p, q,…, y v ya se han calculado, entonces la última fecha de ocurrencia del evento j se calcula como:</h3>
+
+    <h3>TTT<sub>j</sub>=min{TTT<sub>p</sub>-D<sub>jp</sub>,TTT<sub>q</sub>-D<sub>jq</sub>,…TTT<sub>v</sub>-D<sub>jv</sub>}</h3>
+
+    <h3>El paso hacia atrás está completo cuando se calcula TTT<sub>1</sub>en el nodo 1.</h3>
+    <h3>Basándonos en los cálculos anteriores, una actividad (i,j) será crítica si satisface tres condiciones.</h3>
+
+    <h3><ol type="1">
+            <li>TTT<sub>i</sub>=TIP<sub>i</sub></li>
+            <li>TTT<sub>j</sub>=TIP<sub>j</sub></li>
+            <li>TTT<sub>j</sub>-TTT<sub>i</sub>=TIP<sub>j</sub>-TIP<sub>i</sub>=D<sub>ij  </sub></li>
+        </ol></h3>
+    <h3>Las tres condiciones plantean que la primera y la última fecha de ocurrencia de los eventos finales i y  j son iguales y que la duración D_ijocupa exactamente su lapso. Por tanto, una actividad que no satisface las tres condiciones es no crítica.</h3>
+    <h3>Las actividades críticas de una red deben constituir una ruta ininterrumpida que abarca toda la red de principio a fin [5].</h3>
+
+    <h3><b>Ejercicio: </b></h3>
+
+    <h3>Klone Computers es un pequeño fabricante de computadoras personales que está por diseñar, manufacturar y comercializar la computadora de bolsillo Klonepalm. Las actividades y sus relaciones de precedencia se presentan a continuación:</h3>
+
+    <h3>Predecesores inmediatos de las actividades de la Klonepalm:</h3>
+
+            
+
+<br>
+            <center>
+                <figure>
+                    <img src="img/img81.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br> 
+            
+            <h3>Elabore la red con las relaciones de precedencia y determine la ruta crítica.</h3>
+            
+            
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img82.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br> 
+            
+            
+            <h3>Respuesta: </h3>
+            <h3>Ruta crítica: A – F – G - D – J&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total 194 días              </h3>
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <br><br>
+
+    <div style=" width:auto; position:absolute; left: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t0">
+            <span class="glyphicon glyphicon-triangle-left"></span> Anterior
+        </a>
+    </div>
+
+    <div style=" width:auto; position:absolute; right: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t1">
+            <span class="glyphicon glyphicon-triangle-right"></span> Siguiente
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#t1").click(function (event) {
+            $("#temas").load("Tema4.4.1.html");
+        });
+        $("#t0").click(function (event) {
+            $("#temas").load("Tema4.3.html");
+        });
+
+    });
+
+</script>

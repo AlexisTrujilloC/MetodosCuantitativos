@@ -1,0 +1,73 @@
+<div id="t">
+
+    <h1><b>4.5.2 El método de búsqueda de costo mínimo</b></h1>
+
+    <h3>El método de la esquina noroeste no utiliza costos de envío, así que puede producir una solución básica factible inicial que tiene un costo de envío muy alto. El método de búsqueda de costo de mínimo utiliza los costos de envío en un esfuerzo por producir una solución básica factible inicial que tiene un menor costo total, por lo que se requerirán menos iteraciones para hallar la solución óptima.</h3>
+    <h3>Para empezar el método de costo mínimo, determine la variable con el costo de envío más pequeño (llámelo X ij). Luego, asigne a Xij su valor más grande posible. Después cancele el renglón i o la columna j y reduzca la oferta o demanda de la columna o renglón no cancelado por el valor de Xij. Luego, de las celdas que no se encuentren en un renglón o columna cancelada, elija la celda con el costo de envío mínimo y repita el procedimiento. Continúe hasta que haya sólo una celda que pueda ser elegida. En este caso, cancele tanto el renglón como la columna de la celda. Recuerde que (con excepción de la última variable) si una variable satisface tanto una restricción de suministro como de demanda, sólo cancele un renglón o columna, pero no ambos [12].  </h3>
+
+    <h3>El procedimiento agota de la misma manera la oferta de las fábricas y la demanda de los mercados. Inspeccionando siempre los costos a fin de encontrar la casilla siguiente para una asignación en el renglón o la columna de que se trata.</h3>
+
+    <h3><b>Problema propuesto:</b></h3>
+
+ <br>
+            <center>
+                <figure>
+                    <img src="img/img96.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>
+
+
+            <h3>Utilizando el método del costo mínimo:</h3>
+ <br>
+            <center>
+                <figure>
+                    <img src="img/img97.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>
+
+
+
+
+            <h3><b>Solución Básica Factible Inicial:</b></h3>
+            <h3>CX = 100($3) + 200 ($4) + 100 ($3) + 300 ($9) = $4,100</h3>
+            <h3>Esta solución inicial debe ser evaluada para ver si es óptima. Se calcula un índice de mejora por cada celda vacía con el método de salto de piedra en piedra.</h3>
+            <h3>Para aplicar este método, primero se debe observar una regla sobre el número de rutas de envío utilizadas. </h3>
+            <h3>Rutas de envío ocupadas (cuadros) = número de filas + número de columnas – 1</h3>
+            <h3>En este ejemplo la solución inicial debe tener:   3 + 3 – 1 = 5 rutas ocupadas.</h3>
+            <h3>Por el método de costo mínimo obtenemos = 4 rutas ocupadas, como el número de rutas ocupadas es menor que 5, la solución se llama <b>degenerada</b> y, por lo tanto, no es posible utilizar el método de salto de piedra en piedra.</h3>
+            <h3>En este caso el método del costo mínimo no nos lleva a la solución óptima, sin embargo, tiene un mejor rendimiento en cuanto a resultados respecto al Método de la Esquina Noroeste.</h3>
+
+            
+            <br><br>
+
+    <div style=" width:auto; position:absolute; left: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t0">
+            <span class="glyphicon glyphicon-triangle-left"></span> Anterior
+        </a>
+    </div>
+
+    <div style=" width:auto; position:absolute; right: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t1">
+            <span class="glyphicon glyphicon-triangle-right"></span> Siguiente
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#t1").click(function (event) {
+            $("#temas").load("Tema4.5.3.html");
+        });
+        $("#t0").click(function (event) {
+            $("#temas").load("Tema4.5.1.html");
+        });
+
+    });
+
+</script>

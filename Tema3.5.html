@@ -1,0 +1,300 @@
+<div id="t">
+
+    <h1><b>3.5 Análisis de sensibilidad.</b></h1>
+
+    <h3>Es importante llevar a cabo un análisis de sensibilidad, para investigar el efecto que tendría sobre la solución óptima que proporciona el método simplex el hecho de que los parámetros tomen otros valores posibles. En general, habrá unos parámetros a los que se les pueda asignar cualquier valor razonable sin que afecte la optimalidad de esta solución. Sin embargo, también habrá parámetros con valores probables que lleven a una nueva solución óptima. Esta situación sería en particular si la solución original adquiere valores muy inferiores en la función objetivo, o tal vez no factibles.</h3>
+    <h3>El objetivo fundamental del análisis de sensibilidad es identificar los parámetros sensibles, es decir, los parámetros cuyos valores no puedan cambiar sin que cambie la solución óptima [9]. </h3>
+
+    <h3>El nuevo problema puede diferir del original en uno o varios de los siguientes cambios que pueden ocurrir simultáneamente:</h3>
+    <h3>1.- Cambios en la disponibilidad de recursos (vector b)</h3>
+    <h3>2.- cambios en los costos o utilidades unitarias (vector c)</h3>
+    <h3>3.- cambios en los coeficientes tecnológicos (Matriz aij)</h3>
+    <h3>Estructura inicial de una tabla simplex:</h3>
+
+    <br>
+            <center>
+                <figure>
+                    <img src="img/img50.jpg" alt="" width="70%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br> 
+            <h3>Estructura de una tabla final óptima simplex:</h3>
+        <br>
+            <center>
+                <figure>
+                    <img src="img/img51.jpg" alt="" width="70%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br> 
+        
+            <h3><b>1.- CAMBIOS EN LA DISPONIBILIDAD DE RECURSOS (VECTOR B)</b></h3>                                    
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img52.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br> 
+            
+             <br>
+            <center>
+                <figure>
+                    <img src="img/img53.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br> 
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img54.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br> 
+
+             <br>
+            <center>
+                <figure>
+                    <img src="img/img56.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br> 
+            
+            <h3><b>2.- CAMBIOS EN LOS COSTOS O UTILIDADES UNITARIAS (VECTOR C)</b></h3>
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img57.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br> 
+            
+            
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img58.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br> 
+            
+            
+            
+            
+            
+            <h3>Los nuevos resultados al aplicar los cambios en el vector C dan como resultado: para <b>C<sub>1</sub></b> = 3 y para <b>C<sub>2</sub></b> = 0, los cuales se deben sustituir en la tabla final óptima del simplex en Z de x1 y Z de x2, posteriormente hay que hacerlos ambos cero, utilizando el renglón de x1 y se multiplica por (-3) y se suma al renglón de Z para hacer cero el 3 de Z  x1. Por lo tanto, ya no es necesario hacer cero Z de x2 con el renglón de x_2, porque ya es (0). Cabe mencionar que solo se ocuparán los renglones de x1 y x_2 para hacer cero estos nuevos cambios en Z, por lo que no sufrirán cambio alguno. Entonces la tabla final quedaría como sigue:</h3>
+             <br>
+            <center>
+                <figure>
+                    <img src="img/img59.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>
+            
+            
+            <h3>El resultado final de Z = 12, con x1 = 3 y x2 = ½ (sigue siendo factible).</h3>
+            <h3>Comprobación:</h3>
+            <h3>Se sustituyen los nuevos valores de x2 y x1 en el nuevo modelo: </h3>
+<br>
+            <center>
+                <figure>
+                    <img src="img/img60.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img61.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img62.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>
+            
+            <h3>Los nuevos resultados al aplicar los cambios en el vector C dan como resultado: para <b>C<sub>1</sub></b> = -1 y para <b>C<sub>2</sub></b> = -1, los cuales se deben sustituir en la tabla final óptima del simplex en Z de x1 y Z de x2, posteriormente hay que hacer cero ambos, utilizando el renglón de x1 y se suma al renglón de Z para hacer cero el -1 de Z x1 y el renglón de x2  se suma al renglón de Z para hacer cero el -1 de Z x2. Cabe mencionar que solo se ocuparán los renglones de x1 y x_2 para hacer cero estos nuevos cambios en Z, por lo que no sufrirán cambio alguno. Entonces la tabla final quedaría como sigue:</h3>
+            
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img63.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>
+            
+            <h3>El resultado final de Z = 8, con x1 = 2 y x2 = 2 (por lo tanto, sigue siendo factible).</h3>
+            <h3>Comprobación:</h3>
+            <h3>Se sustituyen los nuevos valores de x2 y x1 en el nuevo modelo: </h3>
+
+            
+             <br>
+            <center>
+                <figure>
+                    <img src="img/img64.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>
+            
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img65.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>
+            
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img66.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>
+            
+            
+            <h3>Los nuevos resultados al aplicar los cambios en el vector C dan como resultado: para <b>C<sub>1</sub></b> = 3 y para <b>C<sub>2</sub></b> = 2, los cuales se deben sustituir en la tabla final óptima del simplex en Z de x1 y Z de x2, posteriormente hay que hacer cero ambos, utilizando el renglón de x1 y se multiplica por (-3) y se suma al renglón de Z para hacer cero el 3 de Z x1 y el renglón de x2  se multiplica por (-2) y se suma al renglón de Z para hacer cero el 2 de Z x2. Cabe mencionar que solo se ocuparán los renglones de x1 y x_2 para hacer cero estos nuevos cambios en Z, por lo que no sufrirán cambio alguno. Entonces la tabla final quedaría como sigue:</h3>
+            
+            
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img67.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>
+            
+            <h3> El resultado final de Z = 5/2, con x1 = 3/2 y x2 = 1 (por lo tanto, sigue siendo factible).</h3>
+            <h3>Comprobación: Se sustituyen los nuevos valores de x2 y x1 en el nuevo modelo: </h3>
+   
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img68.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>
+            
+            <h3><b>3.- CAMBIOS EN LOS COEFICIENTES TECNOLÓGICOS (Matriz aij)</b></h3>
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img69.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>
+            
+            <h3>Se requiere agregar la variable 2x3 en la función objetivo   y el vector A3 = ( 3   4   2 ) ,   por lo tanto, la nueva función quedaría:          </h3>
+            
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img70.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>
+            
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img71.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>
+            
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img72.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>
+            
+            <h3>El siguiente paso es agregar la nueva restricción en la tabla óptima, que en este caso es s4,  después se tiene que hacer cero el 10 de x 1   del renglón de s4, por lo tanto, solo se usará el renglón de x1  para hacer cero el 10 de s4.  Entonces la nueva tabla quedaría como sigue:  </h3>
+            
+             <br>
+            <center>
+                <figure>
+                    <img src="img/img73.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>
+            
+            <h3>Ya al hacer cero el 10, se procede a aplicar el método dual simplex, ya que al regresar valores negativos en la solución da la pauta para que pueda ser aplicado.</h3>
+            
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img74.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>
+            
+            <h3>Se requiere cambiar la variable x1 =1 por  x1 * =0 en la función objetivo   y cambiar la variable original A1  ( 2  1   -1 )  por la nueva variable A1*( 3  1   2 ), por lo tanto la nueva función quedaría:                </h3>
+            
+             <br>
+            <center>
+                <figure>
+                    <img src="img/img75.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>
+            
+            
+            <br><br>
+
+    <div style=" width:auto; position:absolute; left: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t0">
+            <span class="glyphicon glyphicon-triangle-left"></span> Anterior
+        </a>
+    </div>
+
+    <div style=" width:auto; position:absolute; right: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t1">
+            <span class="glyphicon glyphicon-triangle-right"></span> Siguiente
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#t1").click(function (event) {
+            $("#temas").load("Ejercicio2.html");
+        });
+        $("#t0").click(function (event) {
+            $("#temas").load("Tema3.4.1.html");
+        });
+
+    });
+
+</script>

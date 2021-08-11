@@ -1,0 +1,96 @@
+<div id="t">
+
+    <h1><b>    4.4.2 PERT/probabilístico.</b></h1>
+
+    <h3>CPM supone que la duración de cada actividad se conoce con certeza. Para muchos proyectos, esto claramente no es aplicable. PERT probabilístico es un intento por corregir esta deficiencia de CPM modelando la duración de cada actividad como una variable aleatoria. Para cada actividad, PERT requiere que el administrador de proyecto estime las tres cantidades siguientes:</h3>
+
+    <h3>a = estimación de la duración de la actividad en las condiciones más favorables.</h3>
+    <h3>b = estimación de la duración de la actividad en las condiciones menos favorables.</h3>
+    <h3>m = valor más probable para la duración de la actividad.                          </h3>
+
+    <h3>PERT requiere la suposición de que Tij sigue una distribución beta. Si Tij sigue una distribución beta, entonces se puede demostrar que la media y la varianza de Tij, se podría aproximar por:</h3>
+ <br>
+            <center>
+                <figure>
+                    <img src="img/img89.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>
+
+            <h3>PERT requiere la suposición de que las duraciones de las actividades son independientes. </h3>
+            <h3>Sea CP la variable aleatoria que denota la duración total de las actividades en una trayectoria crítica encontrada por CPM y PERT supone que la trayectoria crítica encontrada por CPM contiene suficientes actividades que permiten invocar el Teorema del límite central y concluir que la ruta crítica está normalmente distribuida.</h3>
+            <h3>Con esta suposición se pueden usar para contestar preguntas relacionadas con la probabilidad de que el proyecto se complete en una fecha específica [8].</h3>
+            <h3>Considere el problema de Home Construction, Inc., una compañía que construye casas para una sola familia. Como en el caso determinístico, el gerente de construcción debe primero identificar las principales tareas como se muestra en la tabla:</h3>
+<br>
+            <center>
+                <figure>
+                    <img src="img/img90.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>
+            
+            <h3>            Los tiempos de terminación de estas tareas son bastante variables debido a la incertidumbre de las condiciones climatológicas, la obtención de suministros, el mantenimiento de las relaciones laborales, etc. Así pues, una sola estimación del tiempo no es apropiada.</h3>
+
+            <h3>En la práctica, la distribución real del tiempo de terminación del proyecto se aproxima mediante una distribución normal.</h3>
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img91.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>
+            
+            <h3>            El tiempo de terminación real puede variar debido a que los tiempos de terminación de las tareas son variables. Puesto que el tiempo de terminación esperado es de 30 semanas, hasta cierto grado, no es confiable. El gerente de construcción deberá hacerse preguntas como las siguientes:</h3>
+
+            <h3>a.	¿Cuál es la probabilidad de construir la casa en 32 semanas o menos?</h3>
+
+            <h3>Z = (32 – 30)/1.972    =   1.014</h3>
+         
+            <h3>La probabilidad es del 84.47%</h3>
+
+            <h3>b.	¿Cuál es la fecha última de terminación en la cual usted tiene una confianza del 95% de cumplir?</h3>
+
+            <h3>En la tabla normal se obtiene el valor de Z de 1.645, para lo cual el área que está a la izquierda es de 0.95 Puede ahora calcular el valor de X, a partir de la definición de Z, de la manera siguiente:</h3>
+
+            <h3>Z = 1.645 =   (X – media)/desv. est    =   (X – 30)/    1.972</h3>
+                                     
+
+            <h3>Resolviendo para X se tiene:</h3>
+
+            <h3>X = (1.972) (1.645) + 30 = 33.24</h3>
+
+            <h3>Usted puede tener el 95% de confianza de cumplir en una fecha meta con un tiempo de terminación de 33.24 semanas [9].  </h3>
+
+            
+            <br><br>
+
+    <div style=" width:auto; position:absolute; left: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t0">
+            <span class="glyphicon glyphicon-triangle-left"></span> Anterior
+        </a>
+    </div>
+
+    <div style=" width:auto; position:absolute; right: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t1">
+            <span class="glyphicon glyphicon-triangle-right"></span> Siguiente
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#t1").click(function (event) {
+            $("#temas").load("Tema4.5.html");
+        });
+        $("#t0").click(function (event) {
+            $("#temas").load("Tema4.4.1.html");
+        });
+
+    });
+
+</script>

@@ -1,0 +1,222 @@
+<div id="t">
+
+    <h1><b>3.4.1 El criterio de factibilidad y el criterio de optimalidad</b></h1>
+    <h3>Condición dual de factibilidad. La variable de salida, x 1, es la variable básica que tiene valor más negativo (los empates se rompen de forma arbitraria). Si todas las variables básicas son no negativas, el algoritmo se termina.</h3>
+    <h3>Condición dual de optimalidad. Dado que x 1, es la variable de salida, sea Cj el costo reducido de la variable no básica x¡, y αrj el coeficiente de restricción en la fila x, y en la columna x J de la tabla. La variable de entrada es la variable de entrada es la variable no básica con αrj < 0 que corresponde a </h3>
+    <h3>Min		{ |cj/αrj|+αrj<0}</h3>
+    <h3>No básica x <sub>J</sub></h3>
+    <h3>(Los empates se rompen arbitrariamente). Si αrj ≥ con todas las x<sub>i</sub> no básicas, el problema no tiene una solución factible.</h3>
+    <h3>Para iniciar la programación lineal óptima y no factible, se debe cumplir con dos requisitos:</h3>
+    <h3>	La función objetivo debe satisfacer la condición de optimalidad del método simplex regular.</h3>
+    <h3>	Todas las restricciones deben ser del tipo (≤).</h3>
+    <h3>Las desigualdades del tipo (≥) se convierten en (≤) al multiplicar ambos lados de la desigualdad por -1. Si la PL incluye restricciones (=), la ecuación se puede reemplazar por dos desigualdades. Por ejemplo, x1 +</h3>
+    <h3>x<sub>2</sub> =1, equivalente a x<sub>1</sub> + x<sub>2</sub> ≤1, x<sub>3</sub> + x<sub>2</sub> ≥ 1, o x<sub>1</sub> + x<sub>2</sub> ≤1, - x<sub>1</sub> + x<sub>2</sub> ≤ -1. La solución inicial es no factible si al menos uno de los lados derechos de las desigualdades es negativo [7].</h3>
+
+                <h3>A continuación, se presentan tres ejemplos aplicando el Método Simplex Dual:</h3>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3 class="cen">Ejemplo (1):						</h3>
+                        <h3 class="cen">                        Minimizar Z = 4x<sub>1</sub> +12 x<sub>2</sub> +18 x<sub>3</sub>			</h3>
+                        <h3 class="cen">        Sujeto a:						</h3>
+                        <h3 class="cen">x<sub>1</sub> + 3 x<sub>2</sub> ≥ 3							</h3>
+                        <h3 class="cen">2 x<sub>1</sub> +2 x<sub>3</sub> ≥ 5							</h3>     
+                        <h3 class="cen">x<sub>i</sub>≥0</h3>
+                    </div>
+                    <div class="col-sm-6">
+                        <h3 class="cen">Solución:
+                            <h3 class="cen">Max Z - 4x<sub>1</sub> -12 x<sub>2</sub> -18 x<sub>3</sub> = 0
+                        <h3 class="cen">Sujeto a:  
+                            <h3 class="cen">-x<sub>1</sub>-3 x<sub>2</sub>+ s<sub>1</sub>             ≤ -3
+                                <h3 class="cen">-2 x<sub>2</sub> – 2 x<sub>3</sub> + s<sub>2</sub> ≤ -5
+                    </div>
+                </div>
+<br>
+            <center>
+                <figure>
+                    <img src="img/img41.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br> 
+
+            
+            
+            
+            <h3>La tabla es óptima porque todos los costos reducidos en la fila Z son ≤ 0 (Cx<sub>1</sub> =-4, Cx <sub>2</sub>= - 12, Cx<sub>3 </sub>= -18, C<sub>4</sub>= 0 y C <sub> 5 </sub>=0). También es no factible porque al menos una de las variables básicas es negativa (s<sub>1</sub>=-3, s<sub>2</sub>= -5).</h3>
+
+            <h3>La variable de salida es el número más negativo en la columna de las soluciones, en este caso es el -5 del renglón de s<sub>2</sub> por lo tanto al dividir Z entre s<sub>2</sub>  (solo las variables no básicas que son x1, x2 y x3)</h3>
+ 
+            <h3>z/s<sub>2</sub>  de x<sub>1</sub>  = -4/0 = <span style="color:red">INFINITO</span>; Z/s<sub>2</sub>  de x<sub>2</sub> = -12/-2 = 6 (será la variable de entrada por ser el menor positivo, ya que es un problema de minimización); Z/s<sub>2</sub>  de x<sub>3</sub> -18/-2 = 9, por lo tanto el punto pivote es el -2 por ser el menor positivo al dividir  Z/x<sub>2</sub>/s<sub>2</sub> lo que procede es hacer uno el punto pivote y aplicar los mismos pasos del método simplex que es hacer cero todos los demás números de la columna pivote usando el renglón pivote para la primera iteración. Después de aplicar dicho método la tabla final óptima queda como sigue:</h3>
+
+<br>
+            <center>
+                <figure>
+                    <img src="img/img42.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br> 
+            
+            
+            <h3>Al observar que ya no quedan valores negativos en la solución, se da por terminado el problema, donde el valor de x <sub>1</sub> = 0, x<sub>2</sub> = 5/2, por tanto, al sustituir en la Z original se tiene que:</h3>
+            <h3>Z = 4x<sub>1</sub> + 12 x<sub>2</sub> + 18 x<sub>3</sub> = 4(0) + 12(5/2) + 18(0) = <mark>30</mark>, que es el valor que nos da en Z en la última iteración siendo una solución factible óptima.</h3>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3 class="cen">Ejemplo (2):	</h3>
+                    <h3 class="cen">Minimizar Z = 315x<sub>1</sub> +110 x<sub>2</sub> +50 x<sub>3</sub>	</h3>		
+                    <h3 class="cen">Sujeto a:						</h3>
+                    <h3 class="cen">15x<sub>1</sub> + 2 x <sub>2</sub>    + x<sub>3</sub>   ≥ 200				</h3>
+                    <h3 class="cen">7.5x<sub>1</sub> + 3 x<sub>2</sub>   + x<sub>3</sub>  ≥ 150				</h3>
+                    <h3 class="cen">5x<sub>1</sub> + 2 x<sub>2</sub>   + x<sub>3</sub>     ≥ 120				 </h3>
+                    <h3 class="cen">x<sub>i</sub>≥0</h3>
+                </div>
+            <div class="col-sm-6">
+                <h3 class="cen">				Solución:</h3>
+                <h3 class="cen">                Max Z - 315x<sub>1</sub> -110 x<sub>2</sub> -50 x<sub>3</sub> = 0</h3>
+                    <h3 class="cen">Sujeto a: </h3> 
+                    <h3 class="cen">- 15x<sub>1</sub>-2 x<sub>2</sub>- x<sub>3</sub> + s<sub>1</sub>                ≤ - 200</h3>
+                    <h3 class="cen">- 7.5x<sub>1</sub> - 3 x<sub>2</sub>   - x<sub>3</sub> +  s<sub>2</sub> ≤ -150</h3>
+                    <h3 class="cen">- 5x<sub>1</sub> - 2 x<sub>2</sub>   - x<sub>3</sub> + s<sub>3</sub>      ≤ - 120</h3>
+            </div>
+            </div>
+            
+<br>
+            <center>
+                <figure>
+                    <img src="img/img43.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>     
+            
+            <h3>La tabla es óptima porque todos los costos reducidos en la fila Z son ≤ 0 (C x<sub>1</sub> = -315, Cx<sub>2</sub> = - 110, C x<sub>3</sub> = - 5 0, C <sub>4<sub> = 0, C <sub> 5 </sub>= 0 y C<sub> 6</sub> = 0). También es no factible porque al menos una de las variables básicas es negativa (s<sub>1</sub>= -200, s<sub>2</sub>= -150 y s<sub>3</sub>=-120).</h3>
+
+            <h3>La variable de salida es el número más negativo en la columna de las soluciones, en este caso es el -200 del renglón de s_1 por lo tanto al dividir Z entre s_1 (solo las variables no básicas que son x1, x2 y x3)</h3>
+            <h3>Z/s<sub>1</sub> de x <sub>1</sub>= -315/-15 = 21 (será la variable de entrada por ser el menor positivo, ya que es un problema de minimización); Z/s<sub>1</sub> de x<sub>2</sub> = -110/-2 = 55;  Z/s<sub>1</sub> de x<sub>3</sub> = -50/-1 =50, por lo tanto el punto pivote es el -15 por ser el menor positivo al dividir  Z/x<sub>1</sub>/s<sub>1</sub> lo que procede es hacer uno el punto pivote y aplicar los mismos pasos del método simplex que es hacer cero todos los demás números de la columna pivote usando el renglón pivote para la primera iteración. Después de aplicar dicho método la tabla final óptima queda como sigue:</h3>
+
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img44.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>     
+            
+            <h3>La variable de salida es el número más negativo en la columna de las soluciones, en este caso es el -160/3 del renglón de s<sub>3</sub> por lo tanto al dividir Z entre s<sub>3</sub>  (solo las variables no básicas que son x <sub>1</sub>, x<sub>2</sub> y x<sub>3</sub>) [8].</h3>
+
+            <h3>Z/s<sub>3</sub> de x<sub>1</sub> = 0/0 = 0; Z/s<sub>3</sub> de x<sub>2</sub> = -68/-4/3 = 51; Z/s<sub>3</sub> de x<sub>3</sub> = -29/-2/3 =87/2 (menor positivo) , por lo tanto el punto pivote es el -2/3 por ser el menor positivo al dividir  Z/s<sub>3</sub>/ de
+            x<sub>3</sub> lo que procede es hacer uno el punto pivote y aplicar los mismos pasos del método simplex que es hacer cero todos los demás números de la columna pivote, usando el renglón pivote para la segunda iteración. Después de aplicar dicho método la tabla final óptima queda como sigue:</h3>
+
+             <br>
+            <center>
+                <figure>
+                    <img src="img/img45.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>   
+            
+            
+            <h3>La variable de salida es el número más negativo en la columna de las soluciones, en este caso es el -10 del renglón de s<sub>2</sub> por lo tanto al dividir Z entre s<sub>2</sub>:</h3>
+            <h3>Z/s<sub>2</sub>  de x <sub>1</sub> = 0/0 = 0; Z/s<sub>2</sub> de x <sub>2</sub> = -10/-1 = 10 (menor positivo);  Z/s<sub>2</sub>  de x<sub>3</sub> = 0/0 = 0, por lo tanto el punto pivote es el -1 por ser el menor positivo al dividir Z/s<sub>2</sub>  de
+                x<sub>2</sub> lo que procede es hacer uno el punto pivote y aplicar los mismos pasos del método simplex que es hacer cero todos los demás números de la columna pivote, usando el renglón pivote para la tercera iteración. Después de aplicar dicho método la tabla final óptima queda como sigue:</h3>
+
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img46.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>   
+            
+            
+            <h3>Al observar que ya no quedan valores negativos en la solución, se da por terminado el problema, donde el valor de x 1 = 8, x 2 = 10 y  x3 = 60, por tanto, al sustituir en la Z original se tiene que:</h3>
+            <h3>Z = 315x 1 + 110 x 2 + 50 x 3 = 315(8) + 110(10) + 50(60) = 6620, que es el valor que nos da en Z en la última iteración siendo una solución factible óptima.</h3>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3 class="cen">Ejemplo (3):		</h3>
+                    <h3 class="cen">Maximizar Z = 2x <sub>1</sub> +3x <sub>2</sub> 		</h3>
+                    <h3 class="cen">Sujeto a:				</h3>
+                    <h3 class="cen">2x <sub>1</sub> + x<sub>2</sub>  ≥ 3				</h3>
+                    <h3 class="cen">x <sub >1</sub> + x <sub>2</sub>   = 2				</h3>
+                    <h3 class="cen">x<sub>i</sub>≥0					</h3>
+                </div>
+                <div class="col-sm-6">
+                    <h3 class="cen">    				Solución:</h3>
+                    <h3 class="cen">                Minimizar Z - 2x <sub>1</sub> - 3x<sub> 2</sub> = 0</h3>
+                    <h3 class="cen">Sujeto a:  </h3>
+                    <h3 class="cen">2x<sub>1</sub> + x<sub>2</sub> + s<sub>1</sub>  ≥ 3</h3>
+                    <h3 class="cen">- x <sub>1</sub> - x <sub>2</sub> + s<sub>3</sub> ≥ -2</h3>
+                    <h3 class="cen">x <sub>1</sub> + x <sub>2</sub> + s<sub>2</sub> ≥ 2  </h3>
+                </div>
+            </div>	
+            <h3>(x <sub>1</sub> + x <sub>2</sub> = 2)	 se parte en dos; una ≥ (que así se queda porque cumple) y otra ≤ (que no cumple); entonces hay que multiplicar por (-1) la ≤ para cambiar la dirección de la desigualdad, ya que todas las restricciones deben de ser ≥ para que sea transformado a un problema de minimización, respetando las variables de holgura con valor positivo)</h3>
+
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img47.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br>   
+            <h3>La tabla es óptima porque todos los costos reducidos en la fila Z son ≤ 0 (C x<sub>1</sub> = -2, Cx<sub>2</sub>= -3, C<sub>3</sub>= 0, C<sub>4</sub>= 0, y C<sub> 5</sub>= 0). También es no factible porque al menos una de las variables básicas es negativa (s<sub>1</sub>= 3, s<sub>2</sub>= -2 y s<sub>3</sub>=2).</h3>
+            <h3>La variable de salida es el número más negativo en la columna de las soluciones, en este caso es el -2 del renglón de s<sub>2</sub> por lo tanto al dividir Z entre s<sub>2</sub> (solo las variables no básicas que son x<sub>1 </sub>y, x<sub>2</sub>).
+                <h3>Z/s<sub>2</sub> de x<sub>1</sub> = -2/-1 = 2 (será la variable de entrada por ser el de menor valor  absoluto, ya que es un problema de maximización); Z/s<sub>2</sub> de x<sub>2</sub> = -3/-1 = 3; por lo tanto el punto pivote es el -1 por ser el de menor valor absoluto al dividir  Z/s<sub>2</sub> de x<sub>1</sub>; lo que procede es hacer uno el punto pivote y aplicar los mismos pasos del método simplex, que es hacer cero todos los demás números de la columna pivote usando el renglón pivote para la primera iteración. Después de aplicar dicho método la tabla final óptima queda como sigue:</h3>
+
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img48.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br> 
+            
+            <h3>La variable de salida es el número más negativo en la columna de las soluciones, en este caso es el -1 del renglón de s_1 por lo tanto al dividir Z entre s_1 (solo las variables no básicas que son x1 y, x2).</h3>
+            <h3>Z/s<sub>1</sub>  de x1 = 0/0 = 0; Z/s<sub>1</sub> de x2 = -1/-1 = 1(será la variable de entrada por ser el de menor valor  absoluto, ya que es un problema de maximización); por lo tanto el punto pivote es el -1 por ser el de menor valor absoluto al dividir  Z/s<sub>1</sub> de x2  lo que procede es hacer uno el punto pivote y aplicar los mismos pasos del método simplex, que es hacer cero todos los demás números de la columna pivote usando el renglón pivote para la segunda iteración. Después de aplicar dicho método la tabla final óptima queda como sigue:</h3>
+<br>
+            <center>
+                <figure>
+                    <img src="img/img49.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br> 
+            
+            <h3>  Al observar que ya no quedan valores negativos en la solución, se da por terminado el problema, donde el valor de x <sub>1</sub> = 1 y x <sub>2</sub> = 1, por tanto, al sustituir en la Z original se tiene que:
+                <h3>Z = 2x<sub> 1</sub> + 3 x <sub>2</sub> = 2(1) + 3(1) = 5, que es el valor que nos da en Z en la última iteración siendo una solución factible óptima.</h3>
+
+            
+            
+                <br><br>
+
+                <div style=" width:auto; position:absolute; left: 0%;">
+                    <a href=# class="btn btn-info btn-lg"  id="t0">
+                        <span class="glyphicon glyphicon-triangle-left"></span> Anterior
+                    </a>
+                </div>
+
+                <div style=" width:auto; position:absolute; right: 0%;">
+                    <a href=# class="btn btn-info btn-lg"  id="t1">
+                        <span class="glyphicon glyphicon-triangle-right"></span> Siguiente
+                    </a>
+                </div>
+                <br>
+                <br>
+                <br>
+                </div>
+                <script>
+                    $(document).ready(function () {
+                        $("#t1").click(function (event) {
+                            $("#temas").load("Tema3.5.html");
+                        });
+                        $("#t0").click(function (event) {
+                            $("#temas").load("Tema3.4.html");
+                        });
+
+                    });
+
+                </script>

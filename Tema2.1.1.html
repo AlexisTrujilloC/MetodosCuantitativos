@@ -1,0 +1,83 @@
+<div id="t">
+
+    <h1><b>2.1.1	Función lineal, desigualdad lineal y región factible</b></h1>
+
+    <h3><b>Función lineal</b></h3>
+
+    <h3>Una función f(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>n</sub> ) de x<sub>1</sub>,x<sub>2</sub>,…,x<sub>1n</sub> es una función lineal si y solo si para algún conjunto de constantes c<sub>1</sub>,c<sub>2</sub>,…,c<sub>1n</sub>, f(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>1n</sub> )= c<sub>1</sub> x<sub>1</sub>+c<sub>2</sub> x<sub>2</sub>++ …+,c<sub>n</sub> x<sub>n</sub>.</h3>
+    <h3>Por ejemplo, f(x<sub>1</sub>,x<sub>2</sub> )= 2x<sub>1</sub>+x<sub>2</sub> es una función lineal de x<sub>1</sub> y x<sub>2</sub>, </h3>
+    <h3>pero f(x<sub>1</sub>,x<sub>2</sub> )=x<sub>1</sub><sup>2</sup>    x2  no es una función lineal de x<sub>1</sub> y x<sub>2</sub>.</h3>
+
+
+    <h3>Es decir, una relación matemática lineal significa que todos los términos utilizados son de primer grado (es decir, no se elevan al cuadrado ni a la tercera o a una potencia mayor).</h3>
+
+    <h3><b>Desigualdad lineal</b></h3>
+    <h3>Definición. Para cualquier función f(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>n</sub> ) y cualquier número b las desigualdades f(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>1n</sub> )≤b y f(x<sub>1</sub>,x<sub>2</sub>,…,x<sub>1n</sub> )≥b son desigualdades lineales.</h3>
+    <h3>Por consiguiente, 2x<sub>1</sub>+3x<sub>2</sub>≤3  y  2x<sub>1</sub>+x<sub>2</sub>≥3 son desigualdades lineales, </h3>
+    <h3>pero      x<sub>1</sub><sup>2</sup> x<sub>2</sub>≥3     no es una desigualdad lineal.</h3>
+
+    <h3>Un sistema arbitrario de m ecuaciones lineales en n incógnitas se puede escribir como:</h3>
+
+<br>
+<center>
+    <figure>
+    <img src="img/img9.jpg" alt="imagen de antecedentes" />
+    <figcaption>Elaboración propia</figcaption>
+</figure>
+</center>
+<br> 
+    <h3>El primer subíndice en el coeficiente a<sub>ij</sub> indica la ecuación en que aparece el coeficiente, y el segundo subíndice indica a que incógnita multiplica. Así a<sub>12</sub>está en la primera ecuación y multiplica a la incógnita x<sub>2</sub>.</h3>
+
+    <h3><b>Ecuación lineal</b></h3>
+    <h3>Una ecuación con n variables X1, …, Xn es lineal si puede escribirse en la forma:</h3>
+    <h3>a1X1 + a2X2 +…, anXn = b</h3>
+
+    <h3>Las ai  son los coeficientes.</h3>
+    <h3>b es el término constante de la ecuación.</h3>
+    <h3>Las variables X1, X2… se denominan incógnitas.</h3>
+    <h3>Todas las variables están elevadas sólo a la primera potencia.</h3>
+    <h3><b>Nota:</b> Una ecuación lineal no incluye ningún producto o raíz de variables. No aparecen como argumentos de funciones trigonométricas, logarítmicas o exponenciales.</h3>
+
+    <h3>Las siguientes ecuaciones no son lineales:</h3>
+    <h3>X +3Y2 = 7<br>
+        Y – sen X =0<br>
+3X + 2Y – Z + XZ = 4</h3>
+
+    <h3><b>Región factible</b></h3>
+    <h3>La región factible debe satisfacer todas las condiciones especificadas por las restricciones del problema, por lo cual es la región donde todas las restricciones se cumplen. Cualquier punto localizado en la región sería una solución factible del problema. Cualquier punto fuera de la región factible representaría una solución in factible.</h3>
+    <h3><b>Solución óptima</b></h3>
+    <h3>Para  un problema de maximizar la solución óptima es el punto que queda en la región factible en la cual se produce la más alta utilidad; y para un problema de minimizar es el punto que queda en la región factible en la cual se produce el costo más pequeño.</h3>
+
+
+
+
+    <br><br>
+
+
+    <div style=" width:auto; position:absolute; left: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t0">
+            <span class="glyphicon glyphicon-triangle-left"></span> Anterior
+        </a>
+    </div>
+
+    <div style=" width:auto; position:absolute; right: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t1">
+            <span class="glyphicon glyphicon-triangle-right"></span> Siguiente
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#t1").click(function (event) {
+            $("#temas").load("Tema2.1.2.html");
+        });
+        $("#t0").click(function (event) {
+            $("#temas").load("Tema2.1.html");
+        });
+
+    });
+
+</script>

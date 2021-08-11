@@ -1,0 +1,149 @@
+<div id="t">
+
+    <h1><b>3.3 Interpretación económica de la dualidad.</b></h1>
+
+    <h3>Un problema de programación lineal está destinado a la optimización de determinados recursos económicos [5]. Los problemas “primales” consisten en maximizar una función objetivo sometido a un conjunto de restricciones representadas por inecuaciones. La interpretación económica de estos valores es la siguiente:</h3>
+    <h3>- Las variables xi pueden interpretarse como los términos desconocidos de los productos que se fabricaran. </h3>
+    <h3>–  Los bi son las cantidades disponibles de recursos para elaborar los productos. </h3>
+    <h3>– Los términos aij son las cantidades necesarias del recurso i para producir una unidad del producto j. </h3>
+    <h3>- Las restricciones representarán la limitación de los recursos disponibles para fabricar los productos. </h3>
+    <h3>- El objetivo del fabricante será obtener un beneficio máximo, o sea, maximizar los beneficios, con lo cual cj serán los beneficios por cada unidad producida del producto j. </h3>
+    <h3>A partir de las relaciones primal-dual se interpretará económicamente los términos del anterior: </h3>
+    <h3>- yi: Contribución a la ganancia por cada unidad del recurso i. Estas variables del problema dual reciben el nombre de precios de sombra.</h3>
+    <h3>- yi>=0: La ganancia por cada unidad del recurso i, debe ser no negativa, de lo contrario sería mejor no utilizar este recurso en absoluto. - F. Objetivo: Es la minimización total del valor implícito de los recursos consumidos por las actividades. </h3>
+    <h3>En general el precio sombra de una restricción proporciona el cambio en el valor de la función objetivo como resultado de un cambio unitario en el término independiente de la restricción, suponiendo que el resto de los parámetros del problema permanecen inalterados. </h3>
+    <h3>En muchos problemas de programación lineal los precios sombra son tan importantes como la solución del problema, ya que proporcionan información sobre el efecto en la función objetivo de cambios en los recursos disponibles.</h3>
+    <h3><b>Ejemplo 1.</b></h3>
+    <h3>Una consultora de software desarrolla dos bases de datos bd-1 y bd-2, bd-1 necesita 4 gb de espacio en la nube y 4gb en disco duro; la bd-2 necesita 3 gb de espacio en la nube y 7 gb en disco duro. La disponibilidad de espacio en la nube y en disco duro es de 40 y 56 gb respectivamente. La base de datos bd-1 representa un beneficio de 70 y la bd-2 de 90 dólares.</h3>
+    <h3>x<sub>1</sub> y x<sub>2</sub>, son la cantidad de bases de datos a desarrollar, por lo que el problema de programación lineal sería:</h3>
+    <h3 class="cen">Maximizar: 70 x<sub>1</sub> + 90x<sub>2</sub></h3>
+    <h3 class="cen">s.a.		4x<sub>1</sub> + 3x<sub>2</sub> ≤ 40</h3>
+    <h3 class="cen">4x<sub>1</sub> + 7x<sub>2</sub>≤ 56</h3>
+
+    <h3 class="cen"><sub>i</sub>≥0 </h3>
+    <h3>Agregándole sus respectivas variables de holgura (s) se tiene:</h3>
+    <h3 class="cen">Maximizar: 70 X<sub>1</sub> + 90x<sub>2</sub>
+        <h3 class="cen">s.a.		4x<sub>1</sub> + 3x<sub>2</sub> + S<sub>1</sub> = 40</h3>
+        <h3 class="cen">4x<sub>1</sub> + 7x<sub>2</sub>+S<sub>2</sub> = 56
+
+            <h3 class="cen">X<sub>i</sub>≥0 </h3>
+            <h3>Su correspondiente tabla inicial simplex:</h3>
+                        
+             <br>
+            <center>
+                <figure>
+                    <img src="img/img38.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br> 
+            
+            <h3>La solución óptima obtenida por el método simplex establece que se tienen que desarrollarse diariamente 7 bases de datos bd-1 y 4 bases de datos bd-2 respectivamente, lo que da lugar a un beneficio de 850 dólares, porque:</h3>
+            <h3>Maximizar: 70 (7) + 90 (4) = 850</h3>
+            <h3>Este resultado indica que ambos espacios en disco duro y en la nube se están ocupando plenamente, porque los dos son obligatorios.  </h3>
+            <h3>Donde:</h3>
+            <h3>s<sub>1</sub>= 65/8 siendo lo más que se puede ocupar de espacio en disco duro en para la base de datos bd-1.</h3>
+
+            <h3>s<sub>1</sub> = 75/8 8 siendo lo más que se puede ocupar de espacio en la nube para la base de datos bd-2.</h3>
+            <h3>Si se quiere aumentar el beneficio diario, es necesario aumentar la capacidad productiva, por eso si se piensa aumentar la capacidad de espacio en la nube de 56 a 72 gb. ¿Cómo afecta esta ampliación de capacidad a los beneficios diarios? La solución puede obtenerse mediante Análisis de Sensibilidad y el método dual del simplex que se verá posteriormente.</h3>
+            <h3>En muchos problemas de programación lineal los precios sombra son tan importantes como la solución del problema, ya que proporcionan información sobre el efecto en la función objetivo de cambios en los recursos disponibles. Los precios sombra pueden obtenerse resolviendo el problema dual, como sigue:</h3>
+            <h3>Modelo original</h3>
+            <h3 class="cen">Maximizar: 70 x<sub>1</sub> + 90x<sub>2</sub></h3>
+            <h3 class="cen">s.a.		4 x<sub>1</sub> + 3x<sub>2</sub> = 40</h3>
+            <h3 class="cen"> 4 x <sub>1</sub> + 7x<sub>2</sub>= 56</h3>
+
+            <h3 class="cen">X<sub>i</sub>≥0 </h3>
+            <h3>Transformándolo a su respectivo problema dual quedaría:</h3>
+    <h3 class="cen">Minimizar:    -40 Y<sub>1</sub> - 56Y<sub>2</sub>
+        <h3 class="cen">s.a.		-4Y<sub>1</sub> -4Y<sub>2</sub>+s<sub>1</sub>≥ -70</h3>
+        <h3 class="cen"> -3Y<sub>1</sub> - 7Y<sub>2</sub>+s<sub>2</sub>≥ - 90</h3>
+
+        <h3 class="cen">X<sub>i</sub>≥0</h3> 
+
+        <h3>Y aplicando el método dual simplex (que se verá posteriormente) se tiene como solución óptima:</h3>
+ 
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img39.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br> 
+            
+            <h3>y1 = 65/8, y 2 = 75/8, y el valor óptimo de la función objetivo es 850, donde se puede ver que </h3>
+            <h3>Y<sub>1</sub> y Y<sub>2</sub> son los precios sombra de las capacidades de almacenamiento en disco duro y de almacenamiento en la nube respectivamente, y que los valores óptimos de la función objetivo de los problemas primal y dual coinciden.</h3>
+
+            <h3><b>Ejemplo 2.</b></h3>
+<h3>Una empresa ensambla dos tipos de computadoras, de escritorio y laptops. Las computadoras de escritorio contienen una memoria ram y las laptops contienen dos memorias ram. </h3>
+<h3>Con la venta de cada computadora de escritorio, la empresa tiene un beneficio neto de 2 dólares por la memoria ram e igualmente, la empresa tiene un beneficio neto de 1 dólar por las memorias ram de las laptops. Ambas computadoras se ensamblan en dos talleres A1 y A2, de los cuales se dispone de un total de 30 y 16 horas semanales respectivamente. Cada computadora de escritorio requiere de 3 horas de ensamble en A1 y 4 horas en A2. Las laptops requieren de 1 hora de ensamble en A1 y 3 horas en A2.</h3>
+<h3>El compromiso es entregar al menos 4 computadoras semanales de cualquiera de las dos, además la empresa usa un camión de entrega donde emplea 1 hora para las computadoras de escritorio y 3 horas para las laptops. La empresa debe ocupar al menos 5 horas de mano de obra del para conducir el camión. </h3>
+<h3>Modelo original</h3>
+<h3 class="cen">Maximizar Z = 2 x<sub>1</sub> + x<sub>2</sub> </h3>
+<h3 class="cen">sujeto a: 	</h3>
+<h3 class="cen">3x<sub>1</sub> + x<sub>2</sub>≤ 30 </h3>
+<h3 class="cen">4x <sub>1</sub> + 3x<sub>2</sub>≤ 16 </h3>
+<h3 class="cen">x <sub>1</sub> + 2x<sub>2</sub> ≥ 4 </h3>
+<h3 class="cen">x <sub>1</sub> + 3x<sub>2</sub> ≥ 5</h3>
+<h3 class="cen">x<sub>i</sub>≥0</h3>
+
+<h3>Agregándole sus correspondientes variables de holgura para aplicar el método simplex, quedaría:</h3>
+<h3 class="cen">Minimizar:    2x <sub>1</sub> +  x<sub>2</sub></h3>
+<h3 class="cen">s.a.		3x <sub>1</sub> + x<<sub>2</sub>   +s<sub>1</sub>=30</h3>
+<h3 class="cen">		4x <sub>1</sub> + 3x<sub>2</sub>+s<sub>2</sub>= 16</h3>
+<h3 class="cen">		x <sub>1</sub> + 2x<sub>2</sub>   +s<sub>3</sub>= 4				</h3>
+<h3 class="cen">x <sub>1</sub> + 3x<sub>2</sub>  +s<sub>4</sub>= 5</h3>
+
+<h3 class="cen">X<sub>i</sub>≥0 </h3>
+<h3>La tabla final óptima quedaría como se muestra a continuación.</h3>
+
+            <br>
+            <center>
+                <figure>
+                    <img src="img/img40.jpg" alt="" width="90%"/>
+                    <figcaption>Elaboración propia</figcaption>
+                </figure>
+            </center>
+            <br> 
+            <h3>Los resultados óptimos serían:</h3>
+            <h3>Se venden en promedio 11 computadoras de escritorio cada 3 semanas (x 1 = 11/3) y en promedio 4 computadoras portátiles cada 9 semanas (x 2 = 4/9)</h3>
+            <h3>Por lo tanto, se tiene una ganancia semanal de $7.78 dólares.</h3>
+            <h3>s<sub>1</sub> = 167/9, por lo tanto, el taller A1 no se ocupa a su máximo, ya que solo se ocupan 18.5 horas del total de 30 horas.</h3>
+            <h3>s<sub>2</sub> = 0, por lo que el taller A2 se ocupa a su máximo toda la semana que son 16 horas.</h3>
+            <h3>s<sub>3</sub> = 5/9, por lo tanto, se ensamblan 0.56 computadoras más del mínimo comprometido</h3>
+            <h3>s<sub>4</sub>= 0, se emplea el número mínimo de horas para transportar las computadoras.</h3>
+   
+            
+            
+            
+            
+            
+    <br><br>
+
+    <div style=" width:auto; position:absolute; left: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t0">
+            <span class="glyphicon glyphicon-triangle-left"></span> Anterior
+        </a>
+    </div>
+
+    <div style=" width:auto; position:absolute; right: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t1">
+            <span class="glyphicon glyphicon-triangle-right"></span> Siguiente
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#t1").click(function (event) {
+            $("#temas").load("Tema3.4.html");
+        });
+        $("#t0").click(function (event) {
+            $("#temas").load("Tema3.2.html");
+        });
+
+    });
+
+</script>

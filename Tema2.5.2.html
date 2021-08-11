@@ -1,0 +1,50 @@
+<div id="t">
+
+
+    <h1><b>2.5.2 Los problemas de minimización: uso de variables artificiales.</b></h1>
+    <h3>En problemas de minimización, la condición de optimalidad  requiere seleccionar la variable de entrada como la variable no básica con el coeficiente objetivo más positivo  en la ecuación objetivo, la regla exacta opuesta del caso de maximización. Esto obedece a que Max Z equivale a min (- z). En cuanto a la condición de factibilidad para seleccionar la variable de salida, la regla no cambia.</h3>
+    <h3><b>Condición de optimalidad.</b> La variable de entrada en un problema de maximización (minimización) es la variable no básica con el coeficiente más negativo (positivo) en la fila Z. Los vínculos se rompen arbitrariamente. El óptimo  se alcanza en la iteración en la cual los coeficientes en la fila Z son negativos (no positivos).</h3>
+        <h3><b>Condición de factibilidad.</b> Tanto en problemas de maximización como de minimización, la variable de salida es la variable básica asociada con la  relación mínima no negativa con el denominador estrictamente positivo. Los vínculos se rompen arbitrariamente.</h3>
+            <h3><b>Operaciones de filas de Gauss-Jordan</b></h3>
+            <h3><b>1. Fila pivote</b></h3>
+            <h3>a. Reemplace la variable de entrada en la columna Básica  con la variable de entrada.</h3>
+            <h3>b. Nueva fila pivote = Fila pivote actual ÷ Elemento pivote</h3>
+            <h3><b>2. Todas las demás filas, incluida la z</b></h3>
+            <h3>Nueva fila = (Fila actual)  -  (Su coeficiente en la columna pivote) X (Nueva fila pivote).</h3>
+            <h3>Los pasos del método simplex son</h3>
+            <h3><b>Paso 0.</b> Determine la solución factible básica inicial.</h3>
+            <h3><b>Paso 1.</b> Seleccione una variable de entrada utilizando la condición de optimalidad.</h3>
+            <h3>Deténgase si no hay variable de entrada; la última condición es óptima. De otro modo,                prosiga con el paso 2.</h3>
+            <h3><b>Paso 2.</b> Seleccione una variable de salida   utilizando la condición de factibilidad.</h3>
+            <h3><b>Paso 3.</b> Aplique los cálculos de Gauss-Jordan para determinar la nueva solución básica. Vaya al paso 1 [20].</h3>
+
+            <br><br>
+
+
+    <div style=" width:auto; position:absolute; left: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t0">
+            <span class="glyphicon glyphicon-triangle-left"></span> Anterior
+        </a>
+    </div>
+
+    <div style=" width:auto; position:absolute; right: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t1">
+            <span class="glyphicon glyphicon-triangle-right"></span> Siguiente
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#t1").click(function (event) {
+            $("#temas").load("Tema2.5.3.html");
+        });
+        $("#t0").click(function (event) {
+            $("#temas").load("Tema2.5.1.html");
+        });
+
+    });
+
+</script>

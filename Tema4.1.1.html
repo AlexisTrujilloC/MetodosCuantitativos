@@ -1,0 +1,41 @@
+<div id="t">
+
+    <h1><b>4.1.1 Características.</b></h1>
+    <h3>La notación para describir una <b>red</b> es (N, A) donde N es el conjunto de nodos, y A es el conjunto de arcos.</h3>
+    <h3>Asociado con cada red hay un <b>flujo</b> (por ejemplo, los productos de petróleo fluyen por un oleoducto y el tráfico de automóviles fluye por carreteras). El flujo máximo en una red puede ser finito o infinito, según la capacidad de sus arcos.</h3>
+    <h3>Se dice que un arco está <b>dirigido u orientado</b> si permite el flujo positivo sólo en una dirección. Una <b>red dirigida</b> tiene todos los arcos dirigidos.</h3>
+    <h3>Una <b>ruta</b> es un conjunto de arcos que unen dos nodos distintos, y que pasan a través de otros nodos en la red. Una ruta forma un ciclo o un bucle si conecta un nodo de vuelta a sí mismo a través de otros nodos.</h3>
+    <h3>Se dice que una <b>red está conectada</b> si cada dos nodos distintos están conectados en al menos una ruta. Un árbol es una red conectada libre de ciclos compuesta por un subconjunto de todos los nodos, y un árbol de expansión es un árbol que une todos los nodos de la red.</h3>
+
+
+    
+    
+            <br><br>
+
+    <div style=" width:auto; position:absolute; left: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t0">
+            <span class="glyphicon glyphicon-triangle-left"></span> Anterior
+        </a>
+    </div>
+
+    <div style=" width:auto; position:absolute; right: 0%;">
+        <a href=# class="btn btn-info btn-lg"  id="t1">
+            <span class="glyphicon glyphicon-triangle-right"></span> Siguiente
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+</div>
+<script>
+    $(document).ready(function () {
+        $("#t1").click(function (event) {
+            $("#temas").load("Tema4.2.html");
+        });
+        $("#t0").click(function (event) {
+            $("#temas").load("Tema4.1.html");
+        });
+
+    });
+
+</script>
